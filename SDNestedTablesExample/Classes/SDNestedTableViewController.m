@@ -197,8 +197,10 @@
 
 - (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    int amt = [[subItemsAmt objectForKey:indexPath] intValue];
-    BOOL isExpanded = [[expandedIndexes objectForKey:indexPath] boolValue];
+    //Here we create a new IndexPath to correct problem in iOS7 retrieving value from dict
+    NSIndexPath *indexPathKey = [NSIndexPath indexPathForRow:indexPath.row inSection:indexPath.section];
+    int amt = [[subItemsAmt objectForKey:indexPathKey] intValue];
+    BOOL isExpanded = [[expandedIndexes objectForKey:indexPathKey] boolValue];
     if(isExpanded)
     {
         return [SDGroupCell getHeight] + [SDGroupCell getsubCellHeight]*amt + 1;

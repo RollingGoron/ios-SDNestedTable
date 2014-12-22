@@ -214,6 +214,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0430;
+				TargetAttributes = {
+					8B8EB7E0156A74B00061CF0C = {
+						DevelopmentTeam = 6RVGTZZ659;
+					};
+				};
 			};
 			buildConfigurationList = 8B8EB7DB156A74B00061CF0C /* Build configuration list for PBXProject "SDNestedTablesExample" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -334,11 +339,14 @@
 		8B8EB800156A74B00061CF0C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SDNestedTablesExample/SDNestedTables-Prefix.pch";
 				INFOPLIST_FILE = "SDNestedTablesExample/SDNestedTables-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = SDNestedTablesExample;
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -347,11 +355,14 @@
 		8B8EB801156A74B00061CF0C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SDNestedTablesExample/SDNestedTables-Prefix.pch";
 				INFOPLIST_FILE = "SDNestedTablesExample/SDNestedTables-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = SDNestedTablesExample;
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
